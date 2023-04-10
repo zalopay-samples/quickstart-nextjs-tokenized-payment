@@ -12,10 +12,12 @@
   - [Author(s)](#author--s-)
   - [Acknowledgement](#acknowledgement)
 
-
 ## Overview
 
-This repository includes examples of integrations for tokenized payment with ZaloPay [Tokenized Payment](https://docs.zalopay.vn/downloads/api/ZaloPay-APIs-AgreementPay-Integration-Document.pdf). Within this demo app, you'll find a simplified version of an e-commerce website, complete with commented code to highlight key features and concepts of ZaloPay's API.
+This repository includes examples of integrations for tokenized payment with
+ZaloPay [Tokenized Payment](https://docs.zalopay.vn/downloads/api/ZaloPay-APIs-AgreementPay-Integration-Document.pdf).
+Within this demo app, you'll find a simplified version of an e-commerce website, complete with commented code to
+highlight key features and concepts of ZaloPay's API.
 
 Tokenized payment, also known as Auto-debit is a payment solution which allows merchants can debit money from
 user balances, accounts automatically after a user signed up an agreement.
@@ -24,7 +26,7 @@ user balances, accounts automatically after a user signed up an agreement.
 
 ## Requirements
 
-- Node.js 16+  
+- Node.js 16+
 - [ZaloPay sanbox application](https://docs.zalopay.vn/v2/start/#A)
 
 ## Installation
@@ -62,21 +64,24 @@ npm run dev
 
 3. Visit [http://localhost:3000/](http://localhost:3000/) to select an integration type.
 
-To try out payment you need install and register ZaloPay Sanbox , see [Trải nghiệm với ZaloPay](https://docs.zalopay.vn/v2/start/#A).
+To try out payment you need install and register ZaloPay Sanbox ,
+see [Trải nghiệm với ZaloPay](https://docs.zalopay.vn/v2/start/#A).
 
 **Note**
 
 This example doesn't include the callback when run at localhost, see how to integration callback in next section
 
-
 ## Troubleshooting
 
 ### Callback testing
 
-Callback (a.k.a Webhook) is a mechanism to deliver Instant Payment Notification asynchronously for Merchant Server receives payment's results from ZaloPay Server, only when ZaloPay has received money from user successfully, and it is important to test them during the setup of your integration.
+Callback (a.k.a Webhook) is a mechanism to deliver Instant Payment Notification asynchronously for Merchant Server
+receives payment's results from ZaloPay Server, only when ZaloPay has received money from user successfully, and it is
+important to test them during the setup of your integration.
 You can find more information about callbacks in [here](https://docs.zalopay.vn/en/v2/general/overview.html#callback).
 
-This sample application provides 2 simple callbacks integration exposed at `pages/api/callback`. For it to work, you need to:
+This sample application provides 2 simple callbacks integration exposed at `pages/api/callback`. For it to work, you
+need to:
 
 1. Provide a way for the ZaloPay Server to reach your running application
 2. Add a callback url to ZaloPay Server notify to your application.
@@ -87,7 +92,8 @@ Your endpoint that will consume the incoming callback must be publicly accessibl
 
 There are typically many options, in this example we can expose your localhost with tunneling software (i.e. ngrok)
 
-If you use a tunneling service like [ngrok](ngrok) the webhook URL will be the generated URL (ie `https://c991-80-113-16-28.ngrok.io`)
+If you use a tunneling service like [ngrok](ngrok) the webhook URL will be the generated URL (
+ie `https://c991-80-113-16-28.ngrok.io`)
 
 ```bash
   $ ngrok http 3000
@@ -105,8 +111,10 @@ If you use a tunneling service like [ngrok](ngrok) the webhook URL will be the g
 
 There are 2 way to set up a callback URL:
 
-- Update `MERCHANT_ENDPOINT` config in `next.config.js` file by ngrok url, example: `https://c991-80-113-16-28.ngrok.io`. This value will send as params
-in order creation API. See more about [Order Information](https://docs.zalopay.vn/en/v2/general/overview.html#order-creation_order-information).
+- Update `MERCHANT_ENDPOINT` config in `next.config.js` file by ngrok url,
+  example: `https://c991-80-113-16-28.ngrok.io`. This value will send as params
+  in order creation API. See more
+  about [Order Information](https://docs.zalopay.vn/en/v2/general/overview.html#order-creation_order-information).
 - Set up in [Sanbox Merchant Portal](https://sbmc.zalopay.vn/home).
 
 If the callback setup is worked, the following message is shown:
@@ -122,6 +130,7 @@ or
 ✅  Confirmed Binding callback received!
 🌈  Please provide mechanism to store payToken= MMJIZWIWOWUTY2M4ZS0ZMTY3LWI5ZJYTOTC0MJG0ZJE1YZFK
 ```
+
 ## Author(s)
 
 - [Phuc Vo](https://github.com/NoRaDoMi)
