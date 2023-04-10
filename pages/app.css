@@ -1,0 +1,65 @@
+.payment-page {
+    /*margin-top: 80px;*/
+    display: flex;
+    justify-content: center;
+}
+
+#payment-modal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%), 0 3px 6px -4px rgb(0 0 0 / 12%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    padding: 40px;
+}
+
+.ant-modal-confirm-body {
+    justify-content: center;
+}
+
+#qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-typography {
+    /*text-align: center;*/
+}
+
+#payment-steps {
+    text-align: left;
+}
+
+#zlp-logo-image {
+    height: 30px;
+    width: 90px;
+    margin-left: 5px;
+}
+
+#zlp-logo-tokenization {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.tokenization-description {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*padding: 12px 0;*/
+    padding: 24px;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.checkout-image {
+    display: inline;
+}
+
+.agreement-btn{
+    margin: 10px 0;
+}
+
