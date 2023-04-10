@@ -1,17 +1,5 @@
 # Quick Start: Tokenized Payment
 
-- [Quick Start: Tokenized Payment](#quick-start--agreement-payment)
-  - [Overview](#overview)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Troubleshooting](#troubleshooting)
-    - [Callback testing](#callback-testing)
-    - [Making your server reachable](#making-your-server-reachable)
-    - [Callback setup](#callback-setup)
-  - [Author(s)](#author--s-)
-  - [Acknowledgement](#acknowledgement)
-
 ## Overview
 
 This repository includes examples of integrations for tokenized payment with
