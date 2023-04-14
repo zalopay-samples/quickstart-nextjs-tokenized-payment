@@ -15,7 +15,7 @@ user balances, accounts automatically after a user signed up an agreement.
 ## Requirements
 
 - Node.js 16+
-- [ZaloPay sanbox application](https://docs.zalopay.vn/v2/start/#A)
+- [ZaloPay Test Wallets](https://beta-docs.zalopay.vn/docs/developer-tools/testing#test-wallets)
 
 ## Installation
 
