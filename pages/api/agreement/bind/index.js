@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         binding_type: 'WALLET',
         binding_data: JSON.stringify(binding_data),
         callback_url: configZLP.host + API_ROUTES.AGREEMENT_CALLBACK,
-        redirect_url: "http://localhost:3000/cart" // testing purpose
+        redirect_url: configZLP.host + "/cart" // testing purpose
       };
 
       // appid|app_trans_id|appuser|amount|apptime|embeddata|item
